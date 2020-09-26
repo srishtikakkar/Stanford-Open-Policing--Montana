@@ -1,32 +1,17 @@
-## Describing the best set of features recognising the over-speeding problem of the Montana State
 
-### Contents
+# Abstract 
 
-1. Chapter 1: Introduction
-1. Chapter 2: Data
-   1. Explanatory and Outcome Variables
-      1. Traffic Stop Analysis by Statewide Racial Composition
-      1. Driver Gender
-      1. Reason for Stop
-      1. Outcome and Hour of the Day
-1. Chapter 3: Methodologies
-   1. Generalised Linear Models
-      1. Linear Regression (Guassian Family)
-      1. Poisson Regression
-      1. Negative Binomial Regression
-      1. Model Comparison
-1. Chapter 4: Results
-   1. Linear Regression (Guassian Family)
-   1. Poisson Regression
-   1. Negative Binomial Regression
-   1. Model Comparison
-1. Chapter 5: Discussion
-1. Chapter 6: Conclusion
+The project presents an analysis and modelling techniques, an attempt to deal with the over-speeding problem that Montana state is facing since the government passed the rule that abolished the day-time speeding limit. The dataset contains various attributes and through the analysis performed we find the best set of variables that associate with the state’s speeding violation problem. We look for modelling strategies to fit data variations and are able to achieve the fit capturing most of the variation exhibited by our dependent variable (number of speeding stops for each outcome group: warning, citation and arrest) . The dataset used for analysis is over-dispersed and the results of Poisson Model will lead to make incorrect inferences. Alternative method of dealing with over-dispersed count data like negative binomial is used. After comparing each fitted model against their AICs, negative binomial model is found to best fit the data. Also, the full model with negative binomial fit displayed better results than the pruned negative binomial models.
 
-# Chapter 1: Introduction
+# Introduction
 
 The Stanford Open Policing Project (https://openpolicing.stanford.edu/) is collaboration between the Stanford Computational Journalism Lab and the Stanford Computational Policy Lab, and it has been the lead entity in dealing informally with the Montana Highway Patrol (MHP) for the past two years. This contact is mainly the result of general discussions related to the traffic stop data collection and statistical analysis and how this data is applied to the various issues like racial profiling (biased police), gender biasing and road rule violations. The project was formalized in late 2015 as a research contract between MHP and Stanford Computational Policy Lab. The development of this resource has been marked by challenges.
 
 Immediately following the execution of the contract and the approval through MHP, the Open Policing Project Team began working closely with MHP project advisor and data managers on issues related to collection and analysis of traffic stop data (Gaffney, et al., 2013). Post transformations, the data were made available for analysis; extract significant disparities in policing to attempt to understand the relationship between police tactics and public behaviour. Montana was the first and only state to abolish the numerical daytime speed limit from its interstate highways.
 
 This report is thus based on the analysis performed using the data provided through the Open Policing Project which contain traffic stop data from the period January 2009 to through December 2016. The dataset contains more than 0.7 million stop records and the demographics related with it. Through the study of relevant facts and statistics, the report proposes to detect the factors influencing the speeding violation for the state based on the attributes like subject race, gender, type of the vehicle and time. It will also break down the analysis to look at the 3 groups for the Outcome of each stop made separately, to explore how drivers’ demographic factors influence the decision-making of the police on speeding stops for the arrest-made, ticket issued or left with a warning. As the dataset contains the geographic coordinates for the stops conducted, it is expected to provide more useful insights to the results.
+
+# Data
+
+Montana is the fourth largest city area wise with a population of 1,068,778, the 8th least populous and third least densely populated of the 50 states in USA. The MHP traffic stop data was obtained from Stanford Open Policing Project website with the date range from 01/01/2009 to 31/12/2016. Most of the data was followed by geographic coordinates and time information. There were 825,111 traffic stop reports, including 545998 speeding stops. There were many types of violations for which the Montana state population were being stopped; therefore, the violations falling in the same category were further collapsed into 1 category. For instance, “Speed over legal”, “Truck speed”, “Reckless driving”, “Careless driving”, “Speed over basic rule” were collapsed under the category of “Speeding”. The result or the outcome of a traffic stop can be a warning, an arrest or citation that is a ticket received. Finally, to classify factors that affect speeding output through regression analysis, 545998 speeding traffic stop records with established driver gender (male or female), Vehicle Type (Sedan, Pickup, Sport Utility etc.), Time and geographic coordinates will be used in this research.
+
