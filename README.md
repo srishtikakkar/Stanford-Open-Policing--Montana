@@ -15,7 +15,7 @@ Srishti Kakkar, MSc Data Science and Analytics candidate
 [Dr. Niamh Cahill](https://www.maynoothuniversity.ie/people/niamh-cahill) , Lecturer / Assistant Professor at Maynooth University
 
 ## Repository contents
-+ code/ - source code written for the analysis of the the traffic stop data for the Montana State, US
-+ report/ - main thesis report, supplementary material and research data management plan
-+ images/- various .png files representing the visualisation and modeling results
-+ data/ - CSV file used for the project
++ [code/](https://github.com/srishtikakkar/Stanford-Open-Policing--Montana/tree/master/Code) - source code written for the analysis of the the traffic stop data for the Montana State, US
++ [report/](https://github.com/srishtikakkar/Stanford-Open-Policing--Montana/tree/master/Report) - main thesis report, supplementary material and research data management plan
++ [images/](https://github.com/srishtikakkar/Stanford-Open-Policing--Montana/tree/master/images) - various .png files representing the visualisation and modeling results
++ [data/](https://github.com/srishtikakkar/Stanford-Open-Policing--Montana/tree/master/Data) - CSV file used for the project
