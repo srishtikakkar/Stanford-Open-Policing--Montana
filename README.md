@@ -12,7 +12,7 @@ The project presents an analysis and modelling techniques, an attempt to deal wi
 Srishti Kakkar, MSc Data Science and Analytics candidate
 
 ### Supervisor
-[Dr. Niamh Cahill] (https://www.maynoothuniversity.ie/people/niamh-cahill) , Lecturer / Assistant Professor at Maynooth University
+[Dr. Niamh Cahill](https://www.maynoothuniversity.ie/people/niamh-cahill) , Lecturer / Assistant Professor at Maynooth University
 
 ## Repository contents
 code/ - source code written for the analysis of the the traffic stop data for the Montana State, US
